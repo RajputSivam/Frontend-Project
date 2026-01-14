@@ -1,0 +1,117 @@
+/* Page styling */
+body {
+    font-family: Arial;
+     background: linear-gradient(135deg, #ffd1dc, #c9f7f5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✅ Title FIX */
+h1 {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #C8A27A; /* Deep soft charcoal */
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+     color: #D184A7;
+    text-shadow: 0 1px 6px rgba(209, 132, 167, 0.35);
+}
+
+
+.container {
+    width: 350px;
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(190, 180, 180, 0.2);
+
+    /* ✅ Make sure nothing affects title */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* Input + Button */
+input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ff73b3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    background: #ff73b3;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4e9e;
+    transform: scale(1.05);
+}
+
+/* Task list */
+#tasklist {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 18px;
+}
+
+#tasklist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffebf4;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    gap: 10px;
+}
+
+/* Hover effect */
+#tasklist li:hover {
+    background: #ffd1e8;
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ff3f5e;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Delete hover */
+.delete-btn:hover {
+    background: #d70a36;
+    transform: scale(1.1);
+}
+
+
+
